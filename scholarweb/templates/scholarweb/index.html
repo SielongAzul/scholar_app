@@ -1,0 +1,33 @@
+<!---->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        {%include 'navbar.html'%}
+
+        <h1>
+            Test 
+        </h1>
+        
+
+{% block content %}
+<!-- When you put this in between for example the navbar that navbar
+will not  be included from main html instead it will show the content
+where this block is contained from the other templates(html)
+
+
+
+{%extends 'main.html'% is need from the other htmls for this to work} -->
+
+{%include 'navbar.html'%}
+
+<h1>
+    Test 
+</h1>
+{% endblock %}
+
+    </body>
+    </html>
